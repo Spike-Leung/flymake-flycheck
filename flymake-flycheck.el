@@ -138,7 +138,7 @@ Usually you will want to use `flymake-flycheck-all-chained-diagnostic-functions'
        (_
         (flymake-flycheck--debug "Translating unknown error level %s to note" (flycheck-error-level err))
         'flymake-note))
-     (format "%s [%s]" (flycheck-error-message err) checker))))
+     (format "%s [%s] [%s]" (flycheck-error-message err) (flycheck-error-id err) checker))))
 
 
 (provide 'flymake-flycheck)
